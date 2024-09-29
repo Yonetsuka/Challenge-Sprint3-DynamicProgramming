@@ -69,14 +69,14 @@ def marcar_presenca():
 
 # Função para o aluno verificar presença
 def verificar_presenca(aluno):
-    nome_aula = input("Digite o nome da aula que deseja verificar a presença: ")
-    if nome_aula in aulas:
-        if aluno[0] in aulas[nome_aula]:
-            print(f"Você tem presença registrada na aula '{nome_aula}'.")
-        else:
-            print(f"Você **não** tem presença registrada na aula '{nome_aula}'.")
+    print(f"\nAulas com presença registrada para {aluno[0]}:")
+    aulas_com_presenca = [aula for aula, alunos in aulas.items() if aluno[0] in alunos]
+    
+    if aulas_com_presenca:
+        for aula in aulas_com_presenca:
+            print(f"- {aula}")
     else:
-        print(f"Aula '{nome_aula}' não encontrada!")
+        print("Você não tem presença registrada em nenhuma aula.")
 
 # Função principal para o menu do professor
 def menu_professor(professor):
