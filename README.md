@@ -28,7 +28,7 @@ O nome pode ser digitado com a primeira letra maiúscula ou minúscula, e o tipo
 Ao selecionar cadastro,o sistema solicitará o nome e a senha. O nome também pode ser digitado com a primeira letra maiúscula ou minúscula.
 Se o login for de um professor, ele poderá:
 - Cadastrar aulas.
-- Marcar presença dos alunos em aulas específicas.
+- Marcar presença dos alunos em treinos específicos.
 
 Se o login for de um aluno, ele poderá:
-- Verificar sua presença em uma aula específica.
+- Verificar sua presença nas aulas/treinos.
